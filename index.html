@@ -217,7 +217,7 @@ html.v-b h1.vb{font-size:clamp(32px,4.6vw,50px)}
 </style>
 <script>
 /* ==== CONFIGURAÇÃO DE RASTREAMENTO: cole os seus IDs aqui ==== */
-window.CFG={META_PIXEL_ID:"",GA4_ID:""};
+window.CFG={META_PIXEL_ID:"1112405498099625",GA4_ID:""};
 /* teste A/B do título: ?v=a ou ?v=b força a versão; sem parâmetro, sorteia 50/50 e lembra */
 (function(){var v=(location.search.match(/[?&]v=([ab])/)||[])[1];try{if(!v)v=localStorage.getItem('lp_v');if(!v){v=Math.random()<.5?'a':'b';}localStorage.setItem('lp_v',v);}catch(e){v=v||'a';}window.LP_V=v;document.documentElement.classList.add('v-'+v);})();
 </script>
