@@ -119,6 +119,12 @@ section{padding:72px 0}
 .cred span{background:var(--ice);color:var(--plum);font-size:13.5px;font-weight:600;border-radius:999px;padding:7px 14px}
 /* oferta */
 .oferta{background:#F1E8EC}
+.prints{margin:34px 0 8px}
+.prints-row{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 14px;justify-content:center}
+.prints figure{margin:0;flex:0 0 min(230px,64vw);scroll-snap-align:center;text-align:center}
+.prints img{width:100%;height:auto;display:block;border-radius:22px;border:6px solid #2a2328;box-shadow:0 18px 40px -18px rgba(70,40,55,.45);background:#1f1a1e;aspect-ratio:560/900;object-fit:cover;object-position:top}
+.prints figcaption{font-size:14px;color:#474747;margin-top:10px;line-height:1.35}
+@media(max-width:760px){.prints-row{justify-content:flex-start}}
 .price{background:#fff;border-radius:28px;max-width:620px;margin:0 auto;padding:40px 34px;text-align:center}
 .price ul{list-style:none;padding:0;margin:22px auto 26px;display:flex;flex-direction:column;gap:10px;text-align:left;max-width:440px}
 .price li{display:flex;gap:10px}
@@ -337,6 +343,15 @@ window.CFG={META_PIXEL_ID:"507046828424523",GA4_ID:""};
     <h3>Você se organiza e descobre o valor</h3>
     <p>Cada atividade do guia tem uma etapa na calculadora. Você preenche o que existe na sua vida, e ela faz as contas: quanto o seu filho custa, qual seria a parte de cada um e quanto falta hoje.</p>
    </div>
+  </div>
+  <div class="prints">
+   <p class="kick" style="text-align:center">Por dentro da calculadora</p>
+   <div class="prints-row">
+    <figure><img src="img/calc-despesas.jpg" alt="Calculadora: quanto o filho custa por mês e para onde vai o dinheiro" loading="lazy" width="560" height="900"><figcaption>Quanto o seu filho custa, gasto por gasto</figcaption></figure>
+    <figure><img src="img/calc-divisao.jpg" alt="Calculadora: divisão justa do custo entre pai e mãe" loading="lazy" width="560" height="1099"><figcaption>A parte justa de cada um e quanto falta hoje</figcaption></figure>
+    <figure><img src="img/calc-provas.jpg" alt="Calculadora: a pasta de provas organizada por tipo de gasto" loading="lazy" width="560" height="1106"><figcaption>A sua pasta de provas, item por item</figcaption></figure>
+   </div>
+   <p class="micro" style="text-align:center">Exemplo com números fictícios.</p>
   </div>
   <div class="box autora"><h3>Feito por advogada de famílias</h3><p>Com a lógica que o Judiciário usa, perspectiva de gênero e a experiência de quem vê esses casos todos os dias.</p></div>
   <div class="facil">
